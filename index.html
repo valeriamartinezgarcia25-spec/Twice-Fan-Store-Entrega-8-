@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twice Fan Store</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>💖 Twice Fan Store</h1>
+        <p>Tu tienda de merch de TWICE</p>
+    </header>
+
+    <!-- Acá se muestran los mensajes de feedback -->
+    <div id="mensaje" class="mensaje oculto"></div>
+
+    <!-- Estadísticas de la tienda -->
+    <section id="estadisticas"></section>
+
+    <!-- Botón para borrar todo lo guardado -->
+    <div class="barra-acciones">
+        <button type="button" id="boton-restablecer" class="secundario">↺ Restablecer tienda</button>
+    </div>
+
+    <main>
+        <div class="columna-izquierda">
+
+            <!-- Formulario para agregar productos -->
+            <section class="panel">
+                <h2>Agregar producto</h2>
+                <div class="formulario">
+                    <input type="text" id="input-nombre" placeholder="Nombre del producto">
+                    <input type="number" id="input-precio" placeholder="Precio">
+                    <input type="number" id="input-stock" placeholder="Stock">
+                    <button type="button" id="boton-agregar">+ Agregar</button>
+                </div>
+            </section>
+
+            <!-- Catálogo -->
+            <section class="panel">
+                <h2>Catálogo</h2>
+                <input type="text" id="input-buscador" placeholder="🔍 Buscar producto...">
+                <div id="contenedor-items"></div>
+            </section>
+        </div>
+
+        <!-- Carrito -->
+        <aside class="panel" id="panel-carrito">
+            <h2>🛒 Mi carrito</h2>
+            <input type="text" id="input-cliente" placeholder="Tu nombre">
+            <div id="contenedor-carrito"></div>
+            <div id="totales"></div>
+            <div class="botones-carrito">
+                <button type="button" id="boton-pagar">Pagar</button>
+                <button type="button" id="boton-vaciar" class="secundario">Vaciar</button>
+            </div>
+            <div id="resumen-pago"></div>
+        </aside>
+    </main>
+</body>
+</html>
